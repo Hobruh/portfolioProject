@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d3d3d3;
+}
+
+#title {
+    text-align: center;
+}
+#image {
+    height: 280px;
+    width: 200px;
+    margin-right: 1800px;
+
+}
+#about-me {
+    margin-left: 10px;
+}
+#bio {
+    text-align: left;
+    font-weight: 500;
+    margin: 20px 0;
+}
+#bio span {
+    display: block;
+}
