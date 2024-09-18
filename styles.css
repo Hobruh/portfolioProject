@@ -12,10 +12,35 @@ body {
 #title {
     text-align: center;
 }
+#nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 800px;
+    background-color: grey;
+    height: 30px;
+    padding: 5px 0;
+    min-width: 200%;
+}
+#nav li {
+    margin-bottom: 20px;
+    list-style: none;
+    font-weight: 600;
+    margin-top: 5px;
+}
+#nav a {
+    text-decoration: none;
+    color: #000;
+}
 #image {
     height: 280px;
     width: 200px;
-    margin-right: 1800px;
+    margin-right: 1700px;
 
 }
 #about-me {
@@ -28,4 +53,37 @@ body {
 }
 #bio span {
     display: block;
+}
+#projects h2 {
+    margin-left: 10px;
+}
+#project-1 li {
+    list-style: none;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 210px;
+    margin-bottom: 20px;
+}
+#project-1 img {
+    height: 400px;
+    width: 600px;
+    margin-left: 10px;
+}
+#project-1 p {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+#project-1 a {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    text-decoration: none;
+}
+#project-1 {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 10px;
 }
