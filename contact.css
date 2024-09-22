@@ -6,33 +6,8 @@
 /* General mobile styles */
 @media screen and (max-width: 768px) {
     /* Adjust navigation */
-    #nav {
-      grid-template-columns: 1fr; /* Make navigation a single column */
-      margin-top: 10px; /* Reduce top margin */
-    }
-    #nav ul {
-      flex-direction: column; /* Stack navigation items vertically */
-      margin-right: 0; /* Remove right margin */
-    }
-    #nav li {
-      margin-bottom: 10px; /* Reduce bottom margin */
-    }
-  
-    /* Adjust image and content */
-    #image {
-      height: 200px; /* Reduce image height */
-      width: 150px; /* Reduce image width */
-      margin-right: 0; /* Remove right margin */
-    }
-    #about-me, #projects {
-      text-align: center; /* Center content */
-    }
-    #project-1 {
-      grid-template-columns: 1fr; /* Make project a single column */
-    }
-    #project-1 img {
-      height: 300px; /* Reduce image height */
-      width: 250px; /* Reduce image width */
+    section {
+      margin-top: 20px;
     }
   }
 

@@ -4,35 +4,38 @@
     box-sizing: border-box;
 }
 /* General mobile styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     /* Adjust navigation */
     #nav {
-      grid-template-columns: 1fr; /* Make navigation a single column */
-      margin-top: 10px; /* Reduce top margin */
+      grid-template-columns: 1fr !important; /* Make navigation a single column */
+      margin-top: 10px !important; /* Reduce top margin */
     }
     #nav ul {
-      flex-direction: column; /* Stack navigation items vertically */
-      margin-right: 0; /* Remove right margin */
+      flex-direction: column !important; /* Stack navigation items vertically */
+      margin-right: 0 !important; /* Remove right margin */
     }
     #nav li {
-      margin-bottom: 10px; /* Reduce bottom margin */
+      margin-bottom: 10px !important; /* Reduce bottom margin */
     }
   
     /* Adjust image and content */
     #image {
-      height: 200px; /* Reduce image height */
-      width: 150px; /* Reduce image width */
-      margin-right: 0; /* Remove right margin */
+      height: 200px !important; /* Reduce image height */
+      width: 150px !important; /* Reduce image width */
+      margin-right: 540px !important; /* Remove right margin */
     }
     #about-me, #projects {
-      text-align: center; /* Center content */
+      text-align: center !important; /* Center content */
+    }
+    #bio {
+      text-align: center !important;
     }
     #project-1 {
-      grid-template-columns: 1fr; /* Make project a single column */
+      grid-template-columns: 1fr !important; /* Make project a single column */
     }
     #project-1 img {
-      height: 300px; /* Reduce image height */
-      width: 250px; /* Reduce image width */
+      height: 300px !important; /* Reduce image height */
+      width: 500px !important; /* Reduce image width */
     }
   }
 
