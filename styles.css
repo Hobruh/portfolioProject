@@ -105,11 +105,20 @@ body {
     font-weight: 600;
     margin-left: 210px;
     margin-bottom: 20px;
+    border-radius  : 5px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+    display: flex;
 }
+
 #project-1 img {
     height: 400px;
     width: 600px;
     margin-left: 10px;
+}
+#project-1-img {
+    display: none;
 }
 #project-1 p {
     margin-left: 10px;
