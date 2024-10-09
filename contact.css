@@ -13,10 +13,10 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #d3d3d3;
+    background-color: rgba(161, 48, 161, 0.76);
 }
 .container {
-    background-color: white;
+    background-color: #948e8e;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -65,7 +65,7 @@ a {
 #nav ul {
     display: flex;
     justify-content: space-around;
-    background-color: grey;
+    background-color: rgba(161, 48, 161, 0.76);
     height: 30px;
     padding: 5px 0;
     min-width: 200%;
