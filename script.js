@@ -6,6 +6,7 @@ const project1btn = document.getElementById("project-1-button");
 project1btn.addEventListener("click", () => {
     if (project1.style.display === "none") {
       project1.style.display = "block";
+      project1.style.marginLeft= "-100px";
       project2.style.display = "none";
       project3.style.display = "none";
     } else {
