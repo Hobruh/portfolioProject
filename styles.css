@@ -3,29 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* General mobile styles */
-@media screen and (max-width: 1200px) {
-    /* Adjust navigation */
-    #nav {
+/* General mobile styles 
+  @media screen and (max-width: 1200px) {
+    /* Adjust navigation 
+    #nav { 
       grid-template-columns: 1fr !important; /* Make navigation a single column */
-      margin-top: 10px !important; /* Reduce top margin */
+      margin-top: 10px !important; /* Reduce top margin 
     }s
     #nav ul {
       flex-direction: column !important; /* Stack navigation items vertically */
-      margin-right: 0 !important; /* Remove right margin */
+      margin-right: 0 !important; /* Remove right margin 
     }
     #nav li {
-      margin-bottom: 10px !important; /* Reduce bottom margin */
+      margin-bottom: 10px !important; /* Reduce bottom margin 
     }
   
-    /* Adjust image and content */
+    /* Adjust image and content 
     #image {
-      height: 200px !important; /* Reduce image height */
-      width: 150px !important; /* Reduce image width */
-      margin-right: 540px !important; /* Remove right margin */
+      height: 200px !important; /* Reduce image height 
+      width: 150px !important; /* Reduce image width 
+      margin-right: 540px !important; /* Remove right margin 
     }
     #about-me, #projects {
-      text-align: center !important; /* Center content */
+      text-align: center !important; /* Center content 
     }
     #bio {
       text-align: center !important;
@@ -34,10 +34,18 @@
       grid-template-columns: 1fr !important; /* Make project a single column */
     }
     #project-1 img {
-      height: 300px !important; /* Reduce image height */
-      width: 500px !important; /* Reduce image width */
+      height: 300px !important; /* Reduce image height 
+      width: 500px !important; /* Reduce image width 
+    } */
+  }
+
+@media screen and (max-width: 768px) {
+    /* Adjust navigation */
+    section {
+      margin-top: 20px;
     }
   }
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -66,12 +74,11 @@ body {
 }
 #nav ul {
     display: flex;
-    justify-content: space-around;
-    margin-right: 800px;
+    justify-content: space-around;    
     background-color: rgba(161, 48, 161, 0.76);
     height: 30px;
     padding: 5px 0;
-    min-width: 145%;
+    min-width: 200%;
 }
 #nav li {
     margin-bottom: 20px;
