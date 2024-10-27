@@ -10,13 +10,23 @@ project2.style.display = "none";
 project3.style.display = "none";
 
 project1btn.addEventListener("click", () => {
+  if (project1.style.display === "none") {
   project1.style.display = "block";
   project2.style.display = "none";
   project3.style.display = "none";
+  } else if (project1.style.display === "block") {
+    project1.style.display = "none";
+    project2.style.display = "none";
+    project3.style.display = "none";
+  }
 });
 
 project2btn.addEventListener("click", () => {
+  if (project2.style.display === "none") {
   project2.style.display = "block";
   project1.style.display = "none";
   project3.style.display = "none";
+  } else if (project2.style.display === "block") {
+    project2.style.display = "none";
+  }
 });
