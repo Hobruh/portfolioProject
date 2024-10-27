@@ -126,6 +126,26 @@ body {
     margin-left: 10px;
     margin-bottom: 20px;
 }
+#project-2 img {
+    height: 400px;
+    width: 600px;
+    margin-left: 10px;
+}
+#project-2-img {
+    display: none;
+}
+#project-2 p {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+#project-2 a {
+  display: block;
+  margin: 20px 0;
+  text-align: center;
+  text-decoration: none;
+}
 #project-1 li {
     list-style: none;
     font-weight: 600;
