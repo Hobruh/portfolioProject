@@ -163,9 +163,7 @@ body {
     width: 500px;
     margin-left: 50px;
 }
-#project-1-img {
-    display: none;
-}
+
 #project-1 p {
     margin-left: 10px;
     font-weight: bold;
@@ -183,4 +181,39 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin: 20px 10px;
+}
+#project-3 li {
+  list-style: none;
+  font-weight: 600;
+  margin-left: 150px;
+  margin-bottom: 5px;
+  border-radius  : 5px;
+  height: 25px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+#project-3 img {
+  height: 400px;
+  width: 500px;
+  margin-left: 50px;
+}
+#project-3 p {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+#project-3 a {
+  display: block;
+  margin: 20px 0;
+  text-align: center;
+  text-decoration: none;
+}
+#project-3 {
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 10px;
 }
