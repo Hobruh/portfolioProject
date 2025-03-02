@@ -3,56 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Adrian Gharineh - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
     <header id="title">
-        <h1>Hi, I'm Adrian Gharineh,</h1>
         <nav id="nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <img src="resources/images/portrait2.jpg" alt="picture of Adrian Gharineh" id="image">
+        <img src="resources/images/portrait2.jpg" alt="Adrian Gharineh" id="image">
+        <h1>Hi, I'm Adrian Gharineh</h1>
     </header>
-    <main id="about">
 
-        <p id="bio">As a nature enthusiast and spiritual seeker, I've found a surprising harmony between these passions and the world of programming.
-            Inspired by the universe's intricate design, I embarked on my development journey in early 2024. 
-            <span>In my portfolio, you will find a sampling of projects that reflect my passion for coding and my love for the natural world.</span></p>
-           </main>
-    <div id="projects">
-        <h2>Projects</h2>
-    <ul id="project-list">
-        <div id="project-1">
-        <li><button id="project-1-button">Timeless Wisdom</button></li>
-        <div id="project-1-img">
-        <img src="resources/images/timelessWisdom.jpg" alt="picture of Timeless Wisdom">
-        <p>A random quote generator built using HTML, CSS, and JavaScript</p>
-        <a href="https://hobruh.github.io/timelessWisdom/" target="_blank">View Project</a>
+    <main id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p id="bio">As a nature enthusiast and spiritual seeker, I've found a surprising harmony between these passions and the world of programming. Inspired by the universe's intricate design, I embarked on my development journey in early 2024. <span>In my portfolio, you will find a sampling of projects that reflect my passion for coding and my love for the natural world.</span></p>
+            </div>
         </div>
+    </main>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul id="project-list">
+                <div id="project-1">
+                    <li><button id="project-1-button">Timeless Wisdom</button></li>
+                    <div id="project-1-img">
+                        <img src="resources/images/timelessWisdom.jpg" alt="Timeless Wisdom">
+                        <p>A random quote generator built using HTML, CSS, and JavaScript</p>
+                        <a href="https://hobruh.github.io/timelessWisdom/" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div id="project-2">
+                    <li><button id="project-2-button">Chillling</button></li>
+                    <div id="project-2-img">
+                        <img src="resources/images/Chillling.jpg" alt="Chillling">
+                        <p>A Spotify API project built using React</p>
+                        <a href="https://chillling.netlify.app" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div id="project-3">
+                    <li><button id="project-3-button">Glisten-ai</button></li>
+                    <div id="project-3-img">
+                        <img src="resources/images/Glisten-ai.jpg.png" alt="Glisten-ai">
+                        <p>A Prismic.io project built using Nextjs, GSAP and Typescript</p>
+                        <a href="https://glisten-ai-five.vercel.app" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </ul>
         </div>
-        <div id="project-2">
-        <li><button id="project-2-button">Chillling</button></li>
-        <div id="project-2-img">
-        <img src="resources/images/Chillling.jpg" alt="picture of Chillling">
-        <p>A spotify API project built using React</p>
-        <a href="https://chillling.netlify.app" target="_blank">View Project</a>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Let's chat about how I can help you with your next project. Whether you're a company looking for a web developer or just someone who wants to say hi, I'd love to hear from you.</p>
+            <p>You can reach me through the following methods:</p>
+            <ul id="contacts">
+                <li><a href="https://www.linkedin.com/in/adrian-gharineh-58353716b/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://github.com/hobruh" target="_blank" class="github"><i class="fab fa-github"></i>GitHub</a></li>
+            </ul>
+
+            <h2>Or message me using this form:</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Adrian Gharineh. All rights reserved.</p>
         </div>
-        <div id="project-3">
-        <li><button id="project-3-button">Glisten-ai</button></li>
-        <div id="project-3-img">
-        <img src="resources/images/Glisten-ai.jpg.png" alt="picture of Glisten-ai">
-        <p>A Prismic.io project built using Nextjs, GSAP and Typescript </p>
-        <a href="https://glisten-ai-five.vercel.app" target="_blank">View Project</a>
-        </div>
-    </ul>
-</div>
-<script src="script.js"></script>
-</div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("vAefgfaVp08jefUhC");
+        })();
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>

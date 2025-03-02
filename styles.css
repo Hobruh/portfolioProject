@@ -1,216 +1,308 @@
+/* Reset and General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* General mobile styles 
-  @media screen and (max-width: 1200px) {
-    /* Adjust navigation 
-    #nav { 
-      grid-template-columns: 1fr !important; /* Make navigation a single column */
-      /*margin-top: 10px !important; /* Reduce top margin 
-    }s
-    #nav ul {
-      flex-direction: column !important; /* Stack navigation items vertically */
-     /* margin-right: 0 !important; /* Remove right margin 
-    }
-    #nav li {
-      margin-bottom: 10px !important; /* Reduce bottom margin 
-    }
-  
-    /* Adjust image and content 
-    #image {
-      height: 200px !important; /* Reduce image height 
-      width: 150px !important; /* Reduce image width 
-      margin-right: 540px !important; /* Remove right margin 
-    }
-    #about-me, #projects {
-      text-align: center !important; /* Center content 
-    }
-    #bio {
-      text-align: center !important;
-    }
-    #project-1 {
-      grid-template-columns: 1fr !important; /* Make project a single column */
-    
-    #project-1 img {
-      height: 300px !important; /* Reduce image height 
-      width: 500px !important; /* Reduce image width 
-    } */
-  }
 
-@media screen and (max-width: 768px) {
-    /* Adjust navigation */
-    section {
-      margin-top: 20px;
+/* ... (your existing CSS) ... */
+
+/* Media Queries for Responsive Design */
+
+/* For screens smaller than 768px (typical for tablets and mobile) */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px; /* Adjust padding for smaller screens */
     }
-  }
+
+    .container {
+        padding: 20px; /* Adjust container padding */
+        margin: 10px auto; /* Adjust container margins */
+    }
+
+    #nav {
+        left: 0;
+        text-align: center;
+    }
+
+    #nav ul {
+        justify-content: center; /* Center nav items */
+        width: 100%;
+    }
+
+    #nav li {
+        margin: 0 10px; /* Adjust nav item margins */
+    }
+
+    #contact-form {
+        width: 90%; /* Adjust form width */
+    }
+
+    #project-1 img,
+    #project-2 img,
+    #project-3 img {
+        width: 100%; /* Make project images responsive */
+        height: auto;
+    }
+
+    #projects {
+        margin-left: 0;
+    }
+
+    #projects .container{
+        padding: 10px;
+    }
+
+}
+
+/* For screens smaller than 480px (typical for mobile phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding-top: 70px;
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust heading font size */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust heading font size */
+    }
+
+    #nav li {
+        margin: 0 5px; /* Further adjust nav item margins */
+    }
+}
 
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif; /* Modern font */
+    line-height: 1.7;
+    color: #444;
     background-color: rgba(161, 48, 161, 0.76);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    padding-top: 50px;
 }
+
 .container {
-    background-color: #948e8e;
+    background-color: #f9f9f9; /* changed to a lighter background */
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    margin-top: 75px;
+    margin: 20px auto;
+    padding: 30px; /* Increased padding */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08); /* Subtle shadow */
 }
+
+/* Header Styles */
 #title {
     text-align: center;
 }
+
 #nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    min-width: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5%;
+    background-color: rgba(161, 48, 161, 0.76);
+    z-index: 1000;
+    border-radius: 0.625em;
 }
+
 #nav ul {
     display: flex;
-    justify-content: space-around;    
-    background-color: rgba(161, 48, 161, 0.76);
+    justify-content: center;
     height: 30px;
-    padding: 5px 0;
-    min-width: 200%;
+    padding: 5px 10px;
+    width: auto;
 }
+
 #nav li {
-    margin-bottom: 20px;
     list-style: none;
     font-weight: 600;
+    margin: 0 15px;
     margin-top: 5px;
 }
+
 #nav a {
     text-decoration: none;
     color: #000;
+    transition: color 0.3s ease; /* Added transition */
 }
+
+#nav a:hover {
+    color: #555; /* Added hover effect */
+}
+
 #image {
     height: 18em;
     width: 20em;
-    margin-left: 1em;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+/* About Section Styles */
+#about {
     margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 250px;
 }
-#about-me {
-    margin-left: 10px;
-}
+
 #bio {
     text-align: left;
     font-weight: 700;
     margin: 20px 0;
 }
+
 #bio span {
     display: block;
 }
+
+/* Projects Section Styles */
 #projects {
     margin-top: 20px;
-    display: flex;
-    flex-direction:row;
-    align-items: flex-start;
-    text-align: flex-start;
-}
-#project-2 li, #project-3 li {
-    margin-left: 160px;
-    list-style: none;
-    margin-bottom: 25px;
-    border-radius  : 5px;
-}
-#projects h2 {
     margin-left: 10px;
-    margin-bottom: 20px;
-}
-#project-2 img {
-    height: 400px;
-    width: 600px;
-    margin-left: 10px;
-}
-#project-2 p {
-  margin-left: 10px;
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
-}
-#project-2 a {
-  display: block;
-  margin: 20px 0;
-  text-align: center;
-  text-decoration: none;
-}
-#project-1 li {
-    list-style: none;
-    font-weight: 600;
-    margin-left: 150px;
-    margin-bottom: 5px;
-    border-radius  : 5px;
-    height: 25px;
-    text-align: center;
-    align-items: center;
-    display: flex;
+    text-align: left;
+    width: 100%;
 }
 
-#project-1 img {
-    height: 400px;
-    width: 500px;
-    margin-left: 50px;
+#project-list {
+    list-style: none;
+    padding: 0;
 }
 
-#project-1 p {
-    margin-left: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-}
-#project-1 a {
+#project-1, #project-2, #project-3 {
     display: block;
     margin: 20px 0;
-    text-align: center;
-    text-decoration: none;
-}
-#project-1 {
-    display: grid;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 20px 10px;
-}
-#project-3 li {
-  list-style: none;
-  font-weight: 600;
-  margin-left: 150px;
-  margin-bottom: 5px;
-  border-radius  : 5px;
-  height: 25px;
-  text-align: center;
-  align-items: center;
-  display: flex;
 }
 
-#project-3 img {
-  height: 400px;
-  width: 500px;
-  margin-left: 50px;
+#project-1 li, #project-2 li, #project-3 li {
+    list-style: none;
+    font-weight: 600;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    height: 25px;
+    text-align: left;
+    align-items: flex-start;
+    display: flex;
 }
-#project-3 p {
-  margin-left: 10px;
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
+
+#project-1 img, #project-2 img, #project-3 img {
+    height: 400px;
+    width: 600px;
+    margin-left: 0;
 }
-#project-3 a {
-  display: block;
-  margin: 20px 0;
-  text-align: center;
-  text-decoration: none;
+
+#project-1 p, #project-2 p, #project-3 p {
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
 }
-#project-3 {
-  display: grid;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 20px 10px;
+
+#project-1 a, #project-2 a, #project-3 a {
+    display: block;
+    margin: 20px 0 20px 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact .container {
+    text-align: center;
+}
+
+#contact h2 {
+    font-family: 'Montserrat', sans-serif; /* Modern font for headings */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    margin-bottom: 20px;
+}
+
+#contacts {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#contacts li {
+    margin-bottom: 10px;
+}
+
+#contacts a {
+    text-decoration: none;
+    color: #000;
+}
+
+#contacts i {
+    margin-right: 5px;
+}
+
+/* Contact Form Styles */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 15px; /* Increased padding */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+}
+
+#contact-form button {
+    padding: 12px 20px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+#contact-form button:hover {
+    background-color: #006666;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Added hover effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer .container {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 10px;
 }
