@@ -190,8 +190,8 @@ body {
 }
 
 #project-1 img, #project-2 img, #project-3 img {
-    height: 400px;
-    width: 600px;
+    height: auto;
+    max-width: 100%;
     margin-left: 0;
 }
 
